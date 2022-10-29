@@ -1,0 +1,10 @@
+[build]
+target = "thumbv6m-none-eabi"
+incremental = true
+
+[target.thumbv6m-none-eabi]
+# direct upload w/out debug probe
+runner = "elf2uf2-rs -d"
+
+[future-incompat-report]
+frequency = "always"
